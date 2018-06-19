@@ -11,7 +11,14 @@ int main(){
   for(i = 0; i < n; i++){
     scanf("%d", &A[i]);
   }
-
+  lb=-1;
+  ub=n;
+  while(ub - lb>1){
+    unsigned int m = (lb + ub)/2;
+    if(A[m] >= k) ub = m;
+    else lb = m;
+  }
+ printf("%d\n",ub);
 
 
   return 0;
