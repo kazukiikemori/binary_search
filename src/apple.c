@@ -7,7 +7,7 @@ int A[100000];
 
 int p(int x){
     int i;
-    int true =1;
+    int true;
     int sum=0;
     for(i=0;i<n;i++){
         if(A[i]%x !=0){

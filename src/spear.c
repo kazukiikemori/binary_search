@@ -7,13 +7,11 @@ int A[100000];
 
 int p(int x){
     int i;
-    int true=0;
-    int sum=0;
+    long long int sum=0;
     for(i=0;i<n;i++){
         sum += A[i]/x;
     }
-    if(sum<k) true =1;
-    return true;
+    return sum < k;
 }
 
 
