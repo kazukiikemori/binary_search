@@ -29,17 +29,9 @@ int main(){
         scanf("%d", &A[i]);
     }
     lb=0;
-    ub=0;
+    ub=100000010;
 
-    for(i=0;i<n;i++){
-        if(lb<A[i]){
-            lb=A[i];
-        }
-        ub +=A[i];
-    }
 
-    lb -=1;
-    ub +=1;
 
 
     while(ub-lb>1){
