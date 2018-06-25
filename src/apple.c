@@ -16,13 +16,8 @@ int p(int x){
         else {
             sum += A[i]/x;
         }
-        if(sum>k){
-            true = 0;
-            return true;
-            break;
-        }
     }
-    return true;
+    return sum <= k;
 }
 
 
