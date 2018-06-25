@@ -11,15 +11,22 @@ int p(int x){
     int count=1;
     int i;
 
-    for(i=0;i<n;i++){
-        if(sum+A[i] > x){
-            count +=1;
-            sum =0;
-        }
-        sum += A[i];
-    }
-    return count<=k;
+   for(i=0;i<n;i++){
+    if(A[i]>x){
+      count = k+1;
+      break;
+    }else if(sum+A[i]>x){
+      count +=1;
+      sum=0;
+      sum+=A[i];
+    }else {
+      sum += A[i];
+            }
+          }
+  return count<=k;
 }
+
+
 
 
 int main(){
