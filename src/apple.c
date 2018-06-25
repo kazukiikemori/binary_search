@@ -28,7 +28,7 @@ int main(){
         scanf("%d", &A[i]);
     }
     lb=0;
-    ub=1000000001;
+    ub=1000000000;
     while(ub-lb>1){
         unsigned int m = (lb+ub)/2;
         if(p(m)){
